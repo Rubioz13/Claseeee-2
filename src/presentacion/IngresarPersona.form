@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="presentacion.IngresarPersona">
-  <grid id="27dc6" binding="plnPirncipal" layout-manager="GridLayoutManager" row-count="5" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="plnPirncipal" layout-manager="GridLayoutManager" row-count="11" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="500" height="288"/>
+      <xy x="20" y="20" width="500" height="297"/>
     </constraints>
     <properties/>
     <border type="none"/>
@@ -18,7 +18,7 @@
       </component>
       <component id="2db7" class="javax.swing.JTextField" binding="txtCodigo">
         <constraints>
-          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="0" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -34,7 +34,7 @@
       </component>
       <component id="8a4ac" class="javax.swing.JTextField" binding="txtNombre">
         <constraints>
-          <grid row="1" column="1" row-span="2" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="1" column="1" row-span="2" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -42,28 +42,105 @@
       </component>
       <component id="ecbac" class="javax.swing.JLabel" binding="lblApellido">
         <constraints>
-          <grid row="2" column="0" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="0" row-span="4" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Apellido"/>
         </properties>
       </component>
-      <component id="5c54" class="javax.swing.JTextField" binding="txtApellido">
-        <constraints>
-          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
       <component id="89b09" class="javax.swing.JButton" binding="btnGuardar">
         <constraints>
-          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="10" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Guardar"/>
         </properties>
       </component>
+      <component id="e469d" class="javax.swing.JLabel" binding="lblIdioma">
+        <constraints>
+          <grid row="6" column="0" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Idiomas"/>
+        </properties>
+      </component>
+      <component id="1c0f6" class="javax.swing.JComboBox" binding="cmbIdioma">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Ingles"/>
+            <item value="Español"/>
+            <item value="Frances"/>
+          </model>
+        </properties>
+      </component>
+      <component id="fc4ff" class="javax.swing.JCheckBox" binding="chbTerminos">
+        <constraints>
+          <grid row="9" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Acepta Terminos y Condiciones."/>
+        </properties>
+      </component>
+      <component id="c391f" class="javax.swing.JLabel" binding="lblGenero">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Genero"/>
+        </properties>
+      </component>
+      <component id="5b2b2" class="javax.swing.JRadioButton" binding="rbtMasculino">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Masculino"/>
+        </properties>
+      </component>
+      <component id="9ae2d" class="javax.swing.JRadioButton" binding="rbtFemenino">
+        <constraints>
+          <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Femenino"/>
+        </properties>
+      </component>
+      <component id="e40a" class="javax.swing.JRadioButton" binding="rbtNobinario">
+        <constraints>
+          <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="No Binario"/>
+        </properties>
+      </component>
+      <component id="5c54" class="javax.swing.JTextField" binding="txtApellido">
+        <constraints>
+          <grid row="3" column="1" row-span="2" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="fbf4a" class="javax.swing.JRadioButton" binding="rbtPrefieronodecir">
+        <constraints>
+          <grid row="8" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Prefiero No Decir"/>
+        </properties>
+      </component>
     </children>
   </grid>
+  <buttonGroups>
+    <group name="GrupoGenero">
+      <member id="5b2b2"/>
+      <member id="9ae2d"/>
+      <member id="e40a"/>
+    </group>
+  </buttonGroups>
 </form>
